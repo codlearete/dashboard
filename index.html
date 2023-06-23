@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            padding-top: 50px;
+        }
+
+        .left-panel {
+            background-color: #f8f9fa;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        .nav-link i {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 left-panel">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#home">
+                            <i class="bi bi-house-fill"></i> Home
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#contact">
+                            <i class="bi bi-person-fill"></i> Contact
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#information">
+                            <i class="bi bi-info-circle-fill"></i> Information
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#guide">
+                            <i class="bi bi-book-fill"></i> Guide
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-10">
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade show active">
+                        <h2>Home</h2>
+                        <p>Welcome to the home page.</p>
+                    </div>
+                    <div id="contact" class="tab-pane fade">
+                        <h2>Contact</h2>
+                        <p>Contact information goes here.</p>
+                    </div>
+                    <div id="information" class="tab-pane fade">
+                        <h2>Information</h2>
+                        <p>Additional information goes here.</p>
+                    </div>
+                    <div id="guide" class="tab-pane fade">
+                        <h2>Guide</h2>
+                        <p>Guidance and instructions go here.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
